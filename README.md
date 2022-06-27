@@ -13,7 +13,7 @@ A Colorodo Board of Elections employee has requested an election audit of a rece
 - Data Source: election_results.csv
 - Software: Python 3.8.13, Visual Studio Code, 1.38.1
 
-## Summary
+## Audit Results
 The analysis of the election shows that:
 - There were 369,711 votes cast in the election.
 - The candidates were:
@@ -24,7 +24,12 @@ The analysis of the election shows that:
     ![](Resources/candidate_votes.png)
 - The winner of the election was:
     ![](Resources/winner.png)
+- The election included 3 counties: Jefferson, Denver and Arapahoe
+- The largest county turnout was Denver with 82.8% of voter turnout
+    ![](Resources/largest_county_turnout.png)
 
-## Challenge Overview
-
-## Challenge Summary
+## Election Audit Summary
+- It is my recommendation that the Colorado Board of Elections scale the current application to include State and Local elections.
+    - A scaled version of the app will  increase the amount of Dependencies. This can get tricky for running python locally(i.e. tabulating all mid-term election reults statewide).
+    - Using [Docker](https://www.docker.com/blog/containerized-python-development-part-1/) would reduce dependency conflict across environments.
+    - A UI could be implemented to ease use for non-techniucal employees of the Colorado Election Board.
